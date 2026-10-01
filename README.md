@@ -1,3 +1,31 @@
+# Rules And Scripts — Fork 导览
+
+**中文** | [English](README.en.md)
+
+本仓库 Fork 自 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)。下方保留上游声明、作者署名、资源说明和链接，不将上游资源冒称为本 Fork 的原创或已重新维护。
+
+## 如何选择资源
+
+- [`rule/`](rule/)：按客户端分类的分流规则。以具体子目录的 README 为准，Mihomo/Clash、Surge、Quantumult X、Loon 等语法不能直接混用。
+- [`rewrite/`](rewrite/)：复写/重写规则；部分功能需要 HTTP 解密或脚本执行，启用前了解权限影响。
+- [`script/`](script/)：自动化脚本与配置说明，不是一个统一的 npm 应用。
+- [`source/`](source/)、[`external/`](external/)：规则来源与外部资源，保留各自作者与附带许可。
+- [`icon/`](icon/)、[`blank/`](blank/)：配套图标和空白资源。
+
+默认分支为 `master`。上游 README 中的 raw URL 指向 blackmatrix7，会跟随上游变动；若要使用本 Fork 的固定版本，先在本 Fork 中确认路径与提交，再使用 `lauipaui/ios_rule_script/<commit>/<path>` 形式的 raw URL。不要未经检查批量替换所有链接。
+
+## 安全、更新与检查
+
+导入前备份客户端配置，只更新需要的资源，用目标客户端的配置校验确认格式和引用成功。上游表格中的“正常/暂停”是该快照的维护标记，不代表本次实测。 本 Fork 的 `smzdm`、`manmanbuy`、`dingdong`、`famijia`、`synology` 已位于 `script/archive/`，历史“正常”标记不代表当前仍在维护。这里没有对全部规则/脚本统一运行的安装命令或验收承诺。
+
+账号 Cookie、Token、订阅 URL 和 MITM 证书私钥只能本地保存；从外部下载的脚本可能以客户端权限运行，必须阅读源码。不在此仓库提交真实账户信息。回归时恢复备份配置或指定先前提交的资源，不通过关闭 TLS 验证掩盖问题。
+
+根目录 [`LICENSE`](LICENSE) 为 GPL-2.0；同时保留下方上游特别声明以及子目录资源条款。存在适用范围或条款冲突疑问时请向原作者确认，本次不重新授权任何资源。本次只改文档，未安装规则、运行账户脚本或重新验证所有第三方资源。
+
+---
+
+## 上游中文说明（保留）
+
 # Rules And Scripts
 
 ## 前言
@@ -69,4 +97,3 @@ https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite
 以下排名不分先后
 
 [@BaileyZyp](https://github.com/BaileyZyp)   [@Mazeorz](https://github.com/Mazeorz)   [@LuzMasonj](https://github.com/LuzMasonj)  [@chouchoui](https://github.com/chouchoui)  [@ypannnn](https://github.com/ypannnn)  [@echizenryoma](https://github.com/echizenryoma)  [@zirawell](https://github.com/zirawell)  [@urzz](https://github.com/urzz)  [@ASD-max](https://github.com/ASD-max)
-
